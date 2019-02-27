@@ -48,3 +48,42 @@ if birth<2000:
 	print("00前")
 else:
 	print("00后")	#将input函数放进int函数内，存进birth的数据就变成了int类型，接下来就能进行判断；
+	
+	
+height = int(input("Plase input your height:"))
+weight = int(input("Plase input your weight:"))
+bmi = height/(weight**2)
+if bmi<0:
+	print ("请输入正确的体重和身高！")
+elif bmi>0 and bmi<18.5:
+	print ("你的体重过轻了！")
+elif bmi>=18.5 and bmi<25:
+	print ("你的体正常！")
+elif bmi>=25 and bmi<28:
+	print ("你的体重过胖了！")
+elif bmi>=28 and bmi<32:
+	print ("你的体重是肥胖！")
+else:
+	print("你的体重超胖！！！！")
+ '''
+ 上面这个代码在输入小数出现报错，原因时int只能转化整型字符串，如果是小数请将int()函数换成float(),
+ 实际上大多数地方要处理的数据都有小数，所以直接用dlat就得了，float有些什么限制暂时未发现，发现了后期补上。
+ '''
+ 
+ #以下为修改后的代码：
+ 
+height = float(input("Plase input your height:"))
+weight = float(input("Plase input your weight:"))
+bmi = height/(weight**2)
+if bmi<0:
+	print ("请输入正确的体重和身高！")
+elif bmi>0 and bmi<18.5:
+	print ("你的体重过轻了！")
+elif bmi>=18.5 and bmi<25:
+	print ("你的体正常！")
+elif bmi>=25 and bmi<28:
+	print ("你的体重过胖了！")
+elif bmi>=28 and bmi<32:
+	print ("你的体重是肥胖！")
+else:
+	print("你的体重超胖！！！！")
