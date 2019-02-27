@@ -33,3 +33,18 @@ if string:
 	print(1)
 else:
 	print(0 )
+
+
+
+
+birth = input("Plase input your birth:")
+if birth<2000:
+	print("00前")
+else:
+	print("00后")	#input放进变量中的数据类型默认为str，然而str和int类型在Python中无法直接比较，所以报错；
+	
+birth = int(input("Plase input your birth:"))
+if birth<2000:
+	print("00前")
+else:
+	print("00后")	#将input函数放进int函数内，存进birth的数据就变成了int类型，接下来就能进行判断；
