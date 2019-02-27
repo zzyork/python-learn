@@ -1,0 +1,15 @@
+classmates = ['Michael','Bob','Tracy']
+classmates.sort()
+for classmate in classmates:
+	print(classmate)
+
+
+L = [
+		['Apple','Google','Microsoft'],
+		['Jave','Python','Ruby','PHP'],
+		['Adam','Bart','Lisa']
+	]
+print(L[0][0])	#打印Apple
+print(L[1][1])	#打印Python
+print(L[2][2])	#打印Lisa
+
