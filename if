@@ -1,0 +1,35 @@
+int = 2
+if int :
+	print(1)
+else:
+	print(0)
+
+int = 0
+if int :
+	print(1)
+else:
+	print(0)	#以上两个是在int为0或不为0时的判断
+
+list = ['1','2','3']
+if list :
+	print(1)
+else:
+	print(0)
+
+list = []
+if list :
+	print(1)
+else:
+	print(0)	#以上两个是在list为空或不为空时的判断
+	
+string = 'wasd'
+if string:
+	print(1)
+else:
+	print(0)
+	
+string = ''
+if string:
+	print(1)
+else:
+	print(0 )
